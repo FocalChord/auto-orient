@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv/
+
+# Photos (user data, not part of the tool)
+photos/
+
+# Model weights (hosted on Hugging Face)
+weights/
+
+# OS
+.DS_Store
+
+# IDE / editor
+.claude/

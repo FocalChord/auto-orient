@@ -1,0 +1,22 @@
+[project]
+name = "auto-orient"
+version = "0.2.0"
+description = "Detect and fix orientation of JPEG images using deep learning"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "click>=8.1",
+    "tensorflow>=2.16",
+    "transformers>=4.30,<5",
+    "tf-keras>=2.16",
+    "numpy>=1.23",
+    "Pillow>=10.0",
+    "rich>=13.0",
+]
+
+[project.scripts]
+auto-orient = "auto_orient.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.10.7,<0.11.0"]
+build-backend = "uv_build"
