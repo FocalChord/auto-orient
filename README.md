@@ -32,11 +32,10 @@ cd auto-orient
 uv sync
 ```
 
-Download the model weights (~990MB) from Hugging Face:
+Download the model weights (~990MB) from [Hugging Face](https://huggingface.co/focalchord/film-rotation):
 
 ```
-pip install huggingface-hub
-huggingface-cli download focalchord/film-rotation weights/model-vit-ang-loss.h5 --local-dir .
+uvx huggingface-cli download focalchord/film-rotation weights/model-vit-ang-loss.h5 --local-dir .
 ```
 
 ## Usage
